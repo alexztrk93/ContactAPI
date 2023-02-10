@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workbook2.1</title>
+</head>
+<body>
+<table border="solid">
+    <thead style="alignment: center">
+    <tr>
+        <td>Title</td>
+        <td>Episode</td>
+        <td>Rating</td>
+        <td>Success</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:object="${show1}">
+        <td th:text="*{title}"></td>
+        <td th:text="*{episode}"></td>
+        <td th:text="*{rating}"></td>
+        <td th:text="*{rating>5.1}? 'GOOD':'BAD'"></td>
+    </tr>
+    <tr th:object="${show2}">
+        <td th:text="*{title}"></td>
+        <td th:text="*{episode}"></td>
+        <td th:text="*{rating}"></td>
+        <td th:text="*{rating>5.1}? 'GOOD':'BAD'"></td>
+    </tr>
+    <tr th:object="${show3}">
+        <td th:text="*{title}"></td>
+        <td th:text="*{episode}"></td>
+        <td th:text="*{rating}"></td>
+        <td th:text="*{rating>5.1}? 'GOOD':'BAD'"></td>
+    </tr>
+    <tr th:object="${show4}">
+        <td th:text="*{title}"></td>
+        <td th:text="*{episode}"></td>
+        <td th:text="*{rating}"></td>
+        <td th:text="*{rating>5.1}? 'GOOD':'BAD'"></td>
+    </tr>
+
+
+    </tbody>
+
+</table>
+</body>
+</html>

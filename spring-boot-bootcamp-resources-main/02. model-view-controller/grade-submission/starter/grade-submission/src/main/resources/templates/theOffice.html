@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Loop</title>
+</head>
+<body>
+
+<table border="2">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Role</td>
+    </tr>
+    </thead>
+
+    <tr th:each="stuff:${staffs}">
+        <td th:text="*{stuff.name}"></td>
+        <td th:text="*{stuff.age}"></td>
+        <td th:text="*{stuff.role}"></td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
